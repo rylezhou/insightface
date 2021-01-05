@@ -102,7 +102,7 @@ All face images are aligned by ficial five landmarks and cropped to 112x112:
 Please check [Dataset-Zoo](https://github.com/deepinsight/insightface/wiki/Dataset-Zoo) for detail information and dataset downloading.
 
 
-* Please check *src/data/face2rec2.py* on how to build a binary face dataset. You can either choose *MTCNN* or *RetinaFace* to align the faces.
+* Please check *recognition/tools/face2rec2.py* on how to build a binary face dataset. You can either choose *MTCNN* or *RetinaFace* to align the faces.
 
 ### Train
 
@@ -187,7 +187,7 @@ CUDA_VISIBLE_DEVICES='0,1,2,3' python -u train_parall.py --network r100 --loss a
 
 ### Pretrained Models
 
-You can use `$INSIGHTFACE/src/eval/verification.py` to test all the pre-trained models.
+You can use `/recognition/ArcFace/verification.py` to test the pre-trained models.
 
 **Please check [Model-Zoo](https://github.com/deepinsight/insightface/wiki/Model-Zoo) for more pretrained models.**
 
